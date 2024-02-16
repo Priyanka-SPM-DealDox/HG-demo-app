@@ -1,0 +1,130 @@
+.rowpeople {
+  display: flex;
+  padding-left: 66px;
+  padding-top: 64px;
+  background-color: white;
+}
+
+div#peoplemain,
+.peoplemain {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.rightpeople {
+  background-color: white;
+  z-index: 1;
+  padding-right: 4px;
+  padding-left: 4px;
+  top: 5px;
+  position: relative;
+  width: 100%;
+}
+
+.peopleprofile {
+  justify-content: center;
+  display: flex;
+}
+
+.peopleprofile i {
+  display: flex;
+  font-size: 100px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(189, 189, 189);
+}
+
+.peopleprofile p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.persondataleft p,
+.practicedataright p,
+.contactdataleft p,
+.costdataright p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.containerPP1,
+.containerPP2,
+.containerPP3,
+.containerPP4,
+.containerPP5,
+.containerPP7,
+.containerPC1,
+.containerPC5,
+.containerPC4 {
+  display: grid;
+  height: 59px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.containerPP6,
+.containerPP8,
+.containerPC2 {
+  display: grid;
+  height: 59px;
+  grid-template-columns: 1fr;
+}
+
+.containerPC3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 59px;
+}
+
+#contentPC7 {
+  border: 0.1px solid rgb(218, 217, 217);
+  height: 59px;
+}
+
+div#contentPP11 {
+  height: 59px;
+}
+
+#contentPC2,
+input[type="number"]::-webkit-outer-spin-button,
+#contentPC2,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.peopleaccess {
+  position: relative;
+  top: 25px;
+  right: 25px;
+  display: flex;
+}
+
+label.hasaccess {
+  position: relative;
+  color: #216c98;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 6px;
+}
+
+.buttons_delete_update,
+.buttons_save_cancel {
+  margin-left: 42%;
+  position: relative;
+  top: 15px;
+}
+
+.contactdataleft,
+.costdataright,
+.persondataleft,
+.practicedataright {
+  width: 50%;
+}

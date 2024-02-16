@@ -1,0 +1,436 @@
+#entireSignupDiv {
+    /* background-image: url("../../src/assets/images/SignUP1.png"); */
+    background-image: url("../../Images/SignUP1.png");
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-size: cover;
+    background-position: top;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+#CompleteSignUp {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../Images/SignUP2.png");
+    background-size: cover;
+    background-position: bottom;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+#LeftDiv {
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#RightDiv {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#boxForRightDiv {
+    width: 84%;
+    height: 94%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 10px 20px;
+}
+
+#heading1 {
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 20px 20px 0px 20px;
+}
+
+#signupcontent {
+    position: relative;
+    font-size: 10px;
+    color: black;
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+
+#firstNameDiv,
+#jobTittleDiv,
+#emailDiv,
+#PhoneDiv,
+#LastNameDiv,
+#companyDiv,
+#EmployeeDiv,
+#countryDiv,
+#PhoneDiv {
+    width: 50%;
+    margin: 0px 5px 5px 20px;
+}
+
+#buttonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+#startButton {
+    margin: 10px 0px 6px 0px;
+    background-image: linear-gradient(to right, #715CF3, #5C99F3);
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: white;
+    width: 87%;
+    height: 34px;
+    border-radius: 7px;
+}
+
+#SignInInfo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    opacity: 0.7;
+    /* color: white; */
+    font-weight: 500;
+    padding: 5px 39px;
+}
+
+#privacyLink {
+    text-decoration: underline;
+    text-decoration-color: #715CF3;
+
+}
+
+#InstructionPrivacy,
+#InstructionPrivacy a {
+    color: white;
+    opacity: 0.8;
+    font-size: 12px;
+    padding-bottom: 4px;
+}
+
+#signupcontent {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.7;
+    /* color: white; */
+    font-weight: 500;
+}
+
+.leftinnerdiv {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 9px;
+}
+
+#SignUpDealDoxIcon {
+    width: 115px;
+    height: 70px;
+    margin-top: 20px;
+}
+
+#leftSideHeading {
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: bolder;
+    color: black;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 20px 20px 0px 0px;
+}
+
+#leftsidePara {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.7;
+    padding: 15px 10px 0px 0px;
+    font-weight: 500;
+}
+
+#trialquote {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 6px 20px 0px 0px;
+    display: flex;
+}
+
+#registerinfo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 4px;
+    opacity: 0.7;
+    padding: 10px 30px;
+    font-weight: 500;
+}
+
+#needAssistance {
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    line-height: 1px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 15px 20px 0px 0px;
+}
+
+#requestDemos {
+    width: 140px;
+    padding: 4px;
+    height: 34px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, #715CF3, #5C99F3);
+    color: white;
+}
+
+#signUPImage {
+    height: 100%;
+    width: 70%;
+    position: relative;
+    bottom: 11%;
+    left: -3%;
+}
+
+#terms {
+
+    accent-color: #715CF3;
+}
+
+#mainnamediv {
+    display: flex;
+}
+
+#textcheck {
+    font-size: 15px;
+    background-color: transparent;
+    border: 2px solid #715CF3;
+    color: #715CF3;
+    padding: 2px;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    top: 5px;
+
+}
+
+#sample {
+    font-size: 13px;
+    background-color: transparent;
+    border: 2px solid red;
+    color: red;
+    padding: 2px;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    top: 0px;
+    margin-right: 3px;
+
+}
+
+#fistLabel,
+#lastLabel,
+#JobTittleLabel,
+#CompanyLabel,
+#emailLabel,
+#EmployeeLabel,
+#countryLabel,
+#registernumber {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    color: #2f2e2e;
+    opacity: 0.9;
+}
+
+#firstNameInput,
+#LastNameInput,
+#JobTittleInput,
+#CompanyInput,
+#emailInput,
+#PhoneInput,
+#countryInput {
+    width: 90%;
+    height: 35px;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    border: 0.1px solid #ccc;
+    outline-color: #715CF3;
+    padding: 5px;
+}
+
+#fullName,
+#companyJobTittleDiv,
+#emailEmployeeDiv,
+#countryPhoneDiv {
+    display: flex;
+    gap: 4px;
+    width: 100%;
+}
+
+#password,
+#cpass {
+    padding: 4px;
+}
+
+#firstNameInput::placeholder,
+#LastNameInput::placeholder,
+#password::placeholder,
+#cpass::placeholder,
+#CompanyInput::placeholder,
+#JobTittleInput::placeholder,
+#emailInput::placeholder,
+#countryInput::placeholder {
+    color: #919191;
+    opacity: 0.7;
+}
+
+#agreediv {
+    display: flex;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #807f7f;
+    position: relative;
+    padding-left: 20px;
+    gap: 5px;
+    /* justify-content: space-between; */
+}
+
+.react-tel-input .form-control {
+    width: 90%;
+}
+
+.registerDeatils {
+    margin-top: 10px;
+}
+
+/* In your CSS file */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+
+#termsofuse {
+    text-decoration: underline;
+    text-decoration-color: #715CF3;
+}
+@media (min-width: 820px) and (min-height: 1180px){
+    #mediadiv {
+        left:-5%;
+        position: relative;
+        }
+        #fullName,#companyJobTittleDiv,#emailEmployeeDiv,#countryPhoneDiv{
+            top: 0px;
+            position: relative;
+        }
+        #agreediv{
+            padding-bottom: 4px;
+        }
+        #notMatch{
+            position: relative;
+            top:-3px;
+            padding-left: 17px;
+        }
+}
+@media (max-width: 768px) and (min-height: 1024px){
+    #mediadiv {
+        left: -6%;
+        position: relative;
+        }
+        #fullName,#companyJobTittleDiv,#emailEmployeeDiv,#countryPhoneDiv{
+            top: -17px;
+            position: relative;
+        }
+        #agreediv{
+            padding-bottom: 4px;
+        }
+        #notMatch{
+            position: relative;
+            top:-20px;
+            padding-left: 15px;
+        }
+        #InstructionPrivacy{
+            position: relative;
+            left: 15px;
+            }
+            #cButton{
+                position: relative;
+                left: 15px;
+            }
+}
+
+@media (max-width: 480px){
+    #LeftDiv
+     {
+        display: none;
+     }
+     #RightDiv {
+        width: 100%;
+     }
+     #signupcontent {
+        font-size: 17px;
+        line-height: 23px;
+        
+        padding-top: 8px;
+        padding-right: 20px;
+        font-weight: 700;
+    }
+    #SignInInfo {
+        line-height: 19px;
+    }
+    #mediadiv  {
+        left: -8%;
+        position: relative;
+    }
+    #agreediv{
+        padding-bottom: 4px;
+    }
+    #fullName,#companyJobTittleDiv,#emailEmployeeDiv,#countryPhoneDiv{
+        top: -15px;
+        position: relative;
+    }
+    #notMatch{
+        position: relative;
+        top:-20px;
+        padding-left: 15px;
+    }
+    #InstructionPrivacy{
+    position: relative;
+    left: 10px;
+    }
+    #cButton{
+        position: relative;
+        left: 10px;
+    }
+}

@@ -1,0 +1,10 @@
+.categaries1grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    height: 59px;
+}
+.categariesgrid2{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    height: 59px;
+ }

@@ -1,0 +1,372 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#config-head {
+  padding-top: 82px;
+  height: 120px;
+  width: 101%;
+  background: rgb(231, 231, 231);
+  text-align: center;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  border: 1px solid rgb(83, 83, 83);
+  border-radius: 1px;
+}
+.config-number {
+  color: #045679;
+  font-weight: bold;
+}
+.config-name {
+  font-weight: bold;
+}
+
+#mainconfig {
+  margin-top: 67px;
+  margin-left: 72px;
+  margin-right: 4px;
+}
+.con-sec1 {
+  margin-top: 10px;
+}
+#subsection1 {
+  display: grid;
+  grid-template-columns: 0.7fr 8fr 4fr;
+  border: 1px solid #e6e4e4;
+  height: 35px;
+  width: 100%;
+}
+
+.subconfig-number {
+  margin-top: 7px;
+  text-align: center;
+  color: #045679;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.subconfig-name {
+  padding-top: 8px;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #012433;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  height: 100%;
+  position: relative;
+}
+
+/* --------------------1------------------- */
+#section1,
+#section2,
+#section3,
+#section4,
+#section5,
+#section6,
+#section7,
+#section8,
+#section9,
+#section10{
+  border: 1px solid #ccc;
+  width: 100%;
+}
+/* ----------------------------------- */
+.input-select-wrapper {
+  position: relative;
+}
+
+#input-select,
+#input-select-2,
+#input-select-3,
+#input-select-4,
+#input-select-5,
+#input-select-6,
+#input-select-7,
+#input-select-8,
+#input-select-9,
+#input-select-10,
+#input-select-11,
+#input-select-12,
+#input-select-13,
+#input-select-14,
+#input-select-15,
+#input-select-16,
+#input-select-17,
+#input-select-18,
+#input-select-19,
+#input-select-20,
+#input-select-21,
+#input-select-22,
+#input-select-23,
+#input-select-24,
+#input-select-25,
+#input-select-26,
+#input-select-27,
+#input-select-28,
+#input-select-29,
+#input-select-30,
+#input-select-31,
+#input-select-32,
+#input-select-33,
+#input-select-34,
+#input-select-35,
+#input-select-36,
+#input-select-37,
+#input-select-38,
+#input-select-39,
+#input-select-40,
+#input-select-41,
+#input-select-42,
+#input-select-43,
+#input-select-44,
+#input-select-45,
+#input-select-46,
+#input-select-47,
+#input-select-48,
+#input-select-49,
+#input-select-50,
+#input-select-51,
+#input-select-52,
+#input-select-53,
+#input-select-54,
+#input-select-55,
+#input-select-56,
+#input-select-57,
+#input-select-58,
+#input-select-59,
+#input-select-60,
+#input-select-61,
+#input-select-62,
+#input-select-63,
+#input-select-64,
+#input-select-65,
+#input-select-66,
+#input-select-67,
+#input-select-68,
+#input-select-69,
+#input-select-70,
+#input-select-71,
+#input-select-72,
+#input-select-73,
+#input-select-74,
+#input-select-75,
+#input-select-76,
+#input-select-77,
+#input-select-78,
+#input-select-79,
+#input-select-80,
+#input-select-81,
+#input-select-82,
+#input-select-83,
+#input-select-84,
+#input-select-85,
+#input-select-86,
+#input-select-87,
+#input-select-88,
+#input-select-89,
+#input-select-90,
+#input-select-91,
+#input-select-92,
+#input-select-93,
+#input-select-94,
+#input-select-95,
+#input-select-96 {
+  width: 100%;
+  height: 31px;
+  border: none;
+  outline-color: #045679;
+  border-radius: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.css-b62m3t-container {
+  outline: #0c0c0c;
+}
+
+#password-input {
+  padding-right: 30px;
+  width: 100%;
+  height: 32px;
+  border: none;
+  outline-color: #045679; /* add some padding to the right of the input field for the icon */
+  border-radius: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.toggle-password {
+  position: absolute; /* position the button absolutely */
+  top: 50%; /* move the button to the vertical center */
+  right: 10px; /* position the button to the right of the input field */
+  transform: translateY(-50%); /* adjust the vertical position of the button */
+  border: none; /* remove the border of the button */
+  background: transparent; /* remove the background of the button */
+  cursor: pointer; /* change the cursor to a pointer */
+}
+
+.toggle-password:focus {
+  outline: none; /* remove the focus outline */
+}
+
+.toggle-password i {
+  font-size: 16px; /* adjust the size of the icon */
+}
+
+#psseye {
+  color: #045679;
+  padding-top: 4px;
+  font-size: 10px;
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust this value to position the icon properly */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.toggle-icon:before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 4px 0 4px; /* Adjust the border-width to change the size of the icon */
+  border-color: #888 transparent transparent transparent;
+}
+
+.angle-up:before {
+  transform: rotate(-180deg);
+}
+
+.angle-down:before {
+  transform: rotate(0);
+}
+#save-configuration {
+  margin-top: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+span.dropdown-icon-contentAction.iconconfig {
+  position: relative;
+  top: -25px;
+}
+input.content7inputRules.config-dropdown {
+  height: 35px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+  font-weight:bold;
+  font-size:12px;
+}
+#select-1,
+#select-2,
+#select-3,
+#select-4,
+#select-5,
+#select-6,
+#select-7,
+#select-8,
+#select-9,
+#select-10,
+#select-11,
+#select-12,
+#select-13,
+#select-14,
+#select-15,
+#select-16,
+#select-17,
+#select-18,
+#select-19,
+#select-20,
+#select-21,
+#select-22,
+#select-23,
+#select-24,
+#select-25,
+#select-26,
+#select-27,
+#select-28,
+#select-29,
+#select-30,
+#select-31,
+#select-32,
+#select-33,
+#select-34,
+#select-35,
+#select-36,
+#select-37,
+#select-38,
+#select-39,
+#select-40,
+#select-41,
+#select-42,
+#select-43,
+#select-44,
+#select-45,
+#select-46,
+#select-47,
+#select-48,
+#select-49,
+#select-50,
+#select-51,
+#select-52,
+#select-53,
+#select-54,
+#select-55,
+#select-56,
+#select-57,
+#select-58,
+#select-59,
+#select-60,
+#select-61,
+#select-62,
+#select-63,
+#select-64,
+#select-65,
+#select-66,
+#select-67,
+#select-68,
+#select-69,
+#select-70,
+#select-71,
+#select-72,
+#select-73,
+#select-74,
+#select-75,
+#select-76,
+#select-77,
+#select-78,
+#select-79,
+#select-80,
+#select-81,
+#select-82,
+#select-83,
+#select-84,
+#select-85,
+#select-86,
+#select-87,
+#select-88,
+#select-89,
+#select-90,
+#select-91,
+#select-92,
+#select-93,
+#select-94,
+#select-95,
+#select-96 {
+  height: 35px;
+}
+

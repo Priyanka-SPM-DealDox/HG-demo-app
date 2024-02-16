@@ -1,0 +1,95 @@
+.numberinput,
+.textinput,
+.emailinput,
+.textareainput,
+.calendercsscomp {
+  padding-left: 6px;
+  border: 0.1px solid rgb(218, 217, 217);
+  border-radius: 1px;
+  height: 59px;
+  width: 100%;
+  font-size: medium;
+  font-weight: lighter;
+  font-size: 12px;
+  outline-color: #216c98;
+}
+
+.textlabel,
+.numberlabel,
+.emailerrorinputlabel,
+.labelcalender,
+.textarealabel ,
+.emaillabel {
+  position: relative;
+  color: #216c98;
+  font-weight: 800;
+  top: -17px;
+  font-size: 10px;
+  padding-left: 6px;
+  float: left;
+  text-wrap: nowrap;
+}
+
+.numberinput::placeholder,
+.textinput::placeholder,
+.textareainput::placeholder,
+.emailinput::placeholder,
+.calendercsscomp::placeholder{
+  font-size: 14px;
+  color: #ccc;
+  font-style: italic;
+}
+.emailerror {
+  border: 2px solid red;
+  outline-color: red;
+}
+
+.emailerror .emailerrorinputlabel {
+  color: red;
+}
+
+.custom-checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 4px;
+}
+.custom-checkbox input {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  cursor: pointer;
+}
+.checkmarkbox {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+.custom-checkbox input:checked + .checkmarkbox {
+  background-color: #216c98;
+  background-color: #216c98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-checkbox input:checked + .checkmarkbox::before {
+  content: "";
+  position: relative;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.checkboxlabel {
+  position: relative;
+  color: #216c98;
+  font-weight: bold;
+  font-size: 10px;
+  font-weight: 800;
+}

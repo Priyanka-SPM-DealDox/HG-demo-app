@@ -1,0 +1,42 @@
+ 
+  .rowcontent {
+    display: flex;
+    padding-left: 68px;
+    padding-top: 70px;
+    background-color: white;
+  }
+
+  /* --------right content-------- */
+  .rightcontent {
+    background-color: white;
+    z-index: 1;
+    padding-right: 4px;
+    padding-left: 4px;
+    position: relative;
+    width: 100%;
+  }
+ 
+  .containercontent1 {
+    display: grid;
+    height: 59px;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.75fr 0.25fr;
+  }
+ 
+  #cc5 {
+   height: 59px;
+   border: 1px solid #ccc;
+  }
+
+  /* --------cancel and save new item content-------- */
+  .delete_update_content,
+  .save_cancel_content {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+    bottom: 0px;
+}
+
+
+

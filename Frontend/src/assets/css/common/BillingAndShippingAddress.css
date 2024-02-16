@@ -1,0 +1,42 @@
+
+.containerA6 {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  margin-top: 30px;
+}
+.left1a,.right1a {
+  width: 50%;
+box-sizing: border-box;
+}
+.bbtn, .sbtn {
+  width: 100%;
+  font-size: 15px;
+  height: 45px;
+  border: 1px solid #ccc;
+}
+.content9,.content10{
+display: flex;
+}
+#billOne label, #ship label {
+  position: relative;
+  font-size: 12px;
+  color: #216c98;
+  top: -25px;
+  left: 15px;
+  font-weight: 800;
+}
+#billOne input, #ship input {
+  border: 1px solid lightgray;
+  height: 30px;
+  width: 100%;
+  padding-left: 90px;
+  outline-color: #216c98;
+}
+.street1,.street2 {
+  width: 50%;
+  height: 30px;
+}
+.hidden {
+  display: none;
+}

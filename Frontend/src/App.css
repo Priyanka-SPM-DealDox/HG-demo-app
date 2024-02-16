@@ -1,0 +1,155 @@
+.react-datepicker-wrapper {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
+
+.rdtPicker thead tr:first-of-type th {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.rdtOpen .rdtPicker {
+  border: 2px solid #216c98;
+  width: 100%;
+}
+
+.rdtPicker .dow {
+  font-size: 11px;
+}
+
+.rdtPrev span .rdtNext span {
+  font-size: 20px;
+}
+.rdtPicker td.rdtActive,
+.rdtPicker td.rdtActive:hover {
+  background-color: #216c98;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.rdtPicker thead tr:first-of-type th:hover {
+  background: #216c98;
+  color: white;
+}
+#reset_data {
+  padding: 6px;
+  color: red;
+  border-radius: 20px;
+  border-color: red;
+  font-size: 9px;
+  background-color: white;
+  font-weight: 800;
+}
+
+#delete_update {
+  gap: 1%;
+}
+
+#save_data {
+  padding: 6px;
+  color: green;
+  border-radius: 20px;
+  border-color: green;
+  font-size: 9px;
+  font-weight: 800;
+}
+#delete_data {
+  padding: 6px;
+  color: rgb(228, 27, 27);
+  border-radius: 20px;
+  border: 2px solid rgb(228, 27, 27);
+  font-size: 9px;
+  background-color: white;
+  font-weight: 800;
+}
+
+#update_data {
+  padding: 6px;
+  color: #267c98;
+  border-radius: 20px;
+  border: 2px solid #267c98;
+  font-size: 9px;
+  background-color: white;
+  font-weight: 800;
+}
+
+#openbtn {
+  border: none;
+  height: 70px;
+  width: 18px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-left: 98.5%;
+  cursor: pointer;
+  position: sticky;
+  background-color: #216c98;
+  color: white;
+  z-index: 1;
+  top: 48%;
+}
+
+.sidepanel {
+  height: 100vh;
+  position: sticky;
+  top: 70px;
+}
+#accessmsg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #ccc;
+  font-weight: bold;
+  cursor: pointer;
+}
+#reset_data:hover {
+  color: white;
+  background-color: red;
+}
+#save_data:hover {
+  color: white;
+  background-color: rgb(128, 185, 144);
+}
+#delete_data:hover {
+  color: white;
+  background-color: rgb(228, 27, 27);
+}
+#update_data:hover {
+  color: white;
+  background-color: #267c98;
+}
+
+/*----------- custom-toast css---------  */
+
+.custom-toast_add .Toastify__progress-bar {
+  background: rgb(74, 146, 59) !important;
+}
+.custom-toast_delete .Toastify__progress-bar {
+  background: red !important;
+}
+.custom-toast_login .Toastify__progress-bar {
+  width: 500px;
+  background: #715cf3 !important;
+}
+
+#fr-logo {
+  float: left;
+  outline: none;
+  display: none;
+}
+#openbtn {
+  position: fixed;
+  top: 50%;
+  z-index: 3;
+  right: 0;
+  height: 60px;
+  width: 18px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: #0f6b93;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

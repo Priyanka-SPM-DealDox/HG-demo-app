@@ -1,0 +1,890 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-container {
+  /* width: 100%; */
+  position: relative;
+  overflow-x: scroll;
+  max-height: 450px;
+  top: -20px;
+  /* padding-right: 15px; */
+}
+#myTable_tbody {
+  max-height: 300px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.myTable {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.myTableTd {
+  border: 1px solid #ddd;
+  width: 250px;
+  font-size: 13px;
+  height: 45px;
+  text-align: center;
+}
+
+.myTableTr:hover {
+  background-color: #e3f4f4;
+}
+
+.myTableTh {
+  background-color: #d9d9d9;
+  position: sticky;
+  top: -1px;
+  cursor: all-scroll;
+  border: none;
+  border: 1px solid #ccc;
+  width: 250px;
+  font-size: 12px;
+  height: 45px;
+ text-align: center;
+ padding-left: 30px;
+}
+/* .myTableTh:first-child{
+  width: 300px;
+} */
+.myTableTd:first-child{
+  width: 300px;
+  text-align: left;
+  padding-left: 75px;
+  font-size: 14px;
+}
+#upArrow {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  float: right;
+  cursor: pointer;
+}
+
+.resize-handle {
+  position: absolute;
+  top: 0;
+  right: -1.5px;
+  bottom: 0;
+  width: 3px;
+  cursor: ew-resize;
+  background-color: #ddd;
+  z-index: 1;
+}
+
+.columnbars {
+  padding: 5px;
+  padding-bottom: 10px;
+  width: 100%;
+  position: relative;
+  height: 85%;
+  background-color: white;
+}
+
+.columnbars li:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+.dropdownpin {
+  position: relative;
+  width: 83px;
+  left: 209px;
+  top: -119px;
+  height: 111px;
+  border: 1px solid #ccc;
+  z-index: 1;
+  background: #f5f5f5;
+}
+
+.icon-hover {
+  display: none;
+}
+
+.left-spacer,
+.right-spacer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+}
+
+.left-spacer {
+  left: 0;
+}
+
+.right-spacer {
+  right: 0;
+}
+
+.spacer-column {
+  width: 50px;
+}
+
+/* .fa-soli */
+svg.svg-inline--fa.fa-bars.fa-solid.icon-hover {
+  left: -23px;
+  position: relative;
+}
+
+.columnbarshr {
+  position: relative;
+  width: 97%;
+  left: 3px;
+}
+
+.autosizebuttons,
+.autosizethiscolumn,
+.pincolumns {
+  background: none;
+  border: none;
+  position: relative;
+  padding: 5px;
+  width: 100%;
+}
+.pinbuttonss {
+  position: relative;
+  top: 2px;
+  border: none;
+  background: none;
+  padding: 7px;
+  width: 81px;
+  left: 0px;
+  cursor: pointer;
+}
+.resetbutton {
+  position: relative;
+  top: 8px;
+  border: none;
+  background: none;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+.autosizethiscolumn:hover {
+  color: white;
+  background-color: #216c98;
+}
+
+.autosizebuttons:hover {
+  background: #216c98;
+  color: white;
+}
+
+.resetbutton:hover {
+  background: #216c98;
+  color: white;
+}
+
+.pincolumns:hover {
+  background: #216c98;
+  color: white;
+}
+
+.contains,
+.notcontains,
+.endwith,
+.startwith,
+.equals,
+.Notequals,
+.Lessthan,
+.Lessthanorequals,
+.Greaterthan,
+.Greaterthanorequals,
+.inrange {
+  position: relative;
+  font-size: 12px;
+  padding: 3px;
+  text-align: left;
+  cursor: pointer;
+  height: 20px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.contains:hover {
+  background: #216c98;
+  color: white;
+}
+.notcontains:hover {
+  background: #216c98;
+  color: white;
+}
+.startwith:hover {
+  background: #216c98;
+  color: white;
+}
+.endwith:hover {
+  background: #216c98;
+  color: white;
+}
+.equals:hover {
+  background: #216c98;
+  color: white;
+}
+.Lessthan:hover {
+  background: #216c98;
+  color: white;
+}
+.Lessthanorequals:hover {
+  background: #216c98;
+  color: white;
+}
+.Greaterthan:hover {
+  background: #216c98;
+  color: white;
+}
+.Greaterthanorequals:hover {
+  background: #216c98;
+  color: white;
+}
+.inrange:hover {
+  background: #216c98;
+  color: white;
+}
+
+.numericalandorinput {
+  position: relative;
+  padding: 3px;
+
+  left: -2px;
+}
+
+.radiobtndiv {
+  display: grid;
+  grid-template-columns: 0.1fr 0.5fr 0.1fr 0.3fr;
+  position: relative;
+  left: 22px;
+  padding: 2px;
+  width: 82%;
+  height: 100%;
+}
+.numericalradiobtndiv {
+  display: grid;
+  grid-template-columns: 0.1fr 0.5fr 0.1fr 0.3fr;
+  position: relative;
+  left: 22px;
+  padding: 2px;
+  width: 82%;
+  height: 100%;
+}
+
+.numericalandbutton {
+  position: relative;
+}
+
+.numericalandlabel {
+  position: relative;
+  left: 5px;
+  font-size: 11px;
+  padding: 0px;
+  font-weight: bold;
+  width: 44%;
+}
+
+.numericalorbutton {
+  position: relative;
+}
+
+.numericalorlabel {
+  position: relative;
+  font-size: 11px;
+  font-weight: bold;
+  left: 5px;
+  width: 50%;
+}
+
+.andbutton {
+  position: relative;
+}
+
+.andlabel {
+  position: relative;
+  left: 5px;
+  font-size: 11px;
+  padding: 0px;
+  font-weight: bold;
+  width: 44%;
+}
+
+.orbutton {
+  position: relative;
+}
+
+.orlabel {
+  position: relative;
+  font-size: 11px;
+  font-weight: bold;
+  left: 5px;
+  width: 50%;
+}
+
+.ascendingbutton {
+  height: 21px;
+  position: relative;
+  left: 15px;
+  top: 3px;
+  width: 32px;
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+div#girdsearch {
+  position: relative;
+  top: 13px;
+  left: 21px;
+}
+
+.checkboxsearch {
+  width: 90%;
+  position: relative;
+  border: 1px solid #ccc;
+  height: 20px;
+  outline-color: #216c98;
+}
+
+.defalutallcheckbox {
+  position: relative;
+  bottom: 5px;
+}
+
+.icondiv {
+  display: grid;
+  position: relative;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  background-color: #f5f5f5;
+}
+.itembarsDiv {
+  background-color: white;
+}
+.itembars {
+  position: relative;
+  float: left;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  color: #216c98;
+  left: 20px;
+}
+#horizpontalfiltericon {
+  position: relative;
+  left: 22px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+#verticalicon {
+  position: relative;
+  left: 24px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  rotate: deg;
+}
+.horizpontalfiltericonDiv {
+  border-bottom: 1px solid #ccc;
+}
+.verticaliconDiv {
+  border-bottom: 1px solid #ccc;
+}
+.filtersearch {
+  position: relative;
+  width: 95%;
+  padding: 2px;
+  margin: 4px;
+  outline-color: #216c98;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 20px;
+  font-size: 11px;
+}
+
+.Numericalclearbuttondiv {
+  width: 100%;
+  height: 35px;
+  position: relative;
+  padding: 3px;
+}
+.columnsnames {
+  font-size: 13px;
+  padding: 10px;
+}
+
+.numericalclearbutton {
+  background: white;
+  border: 1px solid #ccc;
+  width: 30%;
+  height: 91%;
+  left: 2px;
+  position: relative;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.filtercontent {
+  height: 84%;
+  position: relative;
+  background: #f5f5f5;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 2px;
+}
+
+.listselection {
+  position: relative;
+  width: 95%;
+  height: 20px;
+  padding: 2px;
+  margin: 4px;
+  outline-color: #216c98;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.filtersearchandor {
+  position: relative;
+  width: 95%;
+  padding: 2px;
+  margin: 4px;
+  outline-color: #216c98;
+  height: 20px;
+  border-radius: 5px;
+  font-size: 11px;
+  border: 1px solid #ccc;
+}
+
+.listselectionandor {
+  position: relative;
+  width: 95%;
+  padding: 2px;
+  margin: 4px;
+  outline-color: #216c98;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 20px;
+  font-size: 11px;
+}
+
+.filterdropdowngrid {
+  list-style: none;
+  position: relative;
+  height: 93px;
+  width: 95%;
+  background: white;
+  left: 4px;
+  bottom: 66px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  outline-color: lightblue;
+  z-index: 1;
+  padding: 5px;
+}
+
+.filterdropdowngrid li:hover {
+  background-color: #216c98;
+  color: white;
+}
+
+.filterdropdowngridandor li:hover {
+  background-color: #216c98;
+  color: white;
+}
+.Numericalfiltercontent {
+  position: relative;
+  background: #f5f5f5;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 2px;
+}
+.inrangediv {
+  height: 84%;
+  position: relative;
+  padding: 2px;
+}
+.Numericaldropdownlist {
+  list-style: none;
+  position: relative;
+  height: 80%;
+  width: 94%;
+  background: white;
+  left: 4px;
+  bottom: 31px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  outline-color: #216c98;
+  z-index: 1;
+  padding: 4px;
+}
+
+.numericalfilterandoroperator {
+  list-style: none;
+  position: relative;
+  height: 98%;
+  background: white;
+  bottom: 35px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  outline-color: #216c98;
+  padding: 5px;
+  width: 100%;
+  left: 4px;
+}
+
+.Numericaldropdownlist li:hover {
+  background-color: #216c98;
+  color: white;
+}
+.numericalfilterandoroperator li:hover {
+  background-color: #216c98;
+  color: white;
+}
+.filterdropdowninput {
+  position: relative;
+  /* top: -36px; */
+  width: 95%;
+  height: 20px;
+  padding: 2px;
+  margin: 4px;
+  outline-color: #216c98;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 11px;
+}
+.inrangefrom {
+  position: relative;
+  /* top: -36px; */
+  width: 95%;
+  height: 20px;
+  padding: 2px;
+  margin: 4px;
+  outline-color: #216c98;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 11px;
+}
+.inrangeto {
+  position: relative;
+  /* top: -36px; */
+  width: 95%;
+  height: 20px;
+  padding: 2px;
+  margin: 4px;
+  outline-color: #216c98;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 11px;
+}
+.filterinputvalue {
+  position: relative;
+  /* top: -36px; */
+  width: 95%;
+  height: 20px;
+  padding: 2px;
+  margin: 4px;
+  outline-color: #216c98;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.Numericalfilterdropdowninput {
+  position: relative;
+  /* top: -36px; */
+  width: 98%;
+  height: 20px;
+  padding: 2px;
+  margin: 4px;
+  outline-color: #216c98;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.Numericafilterinputvalue {
+  position: relative;
+  width: 98%;
+  padding: 2px;
+  margin: 6px;
+  outline-color: #216c98;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 20px;
+  left: -2px;
+  font-size: 11px;
+}
+.templatefilter {
+  padding: 10px;
+}
+.checkboxverticalicon {
+  padding: 4px 4px 4px 11px;
+  height: 151px;
+}
+.templatesubfilter {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 7px;
+}
+.templatefiltercheckbox {
+  width: 100%;
+  position: relative;
+  border: 1px solid #ccc;
+  height: 20px;
+  outline-color: #216c98;
+  padding: 3px;
+}
+.templatefilterselectlabel {
+  padding-left: 10px;
+  font-size: 14px;
+}
+/* quote page  */
+.barspopupquote {
+  position: absolute;
+  top: 12px;
+  justify-content: center;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 4px;
+  z-index: 1;
+  width: 220px;
+  border: 1px solid #ccc;
+}
+
+/* where used page Css */
+.barspopupwhereused {
+  position: absolute;
+  top: 12px;
+  justify-content: center;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 4px;
+  z-index: 1;
+  width: 220px;
+  height: auto;
+}
+.barspopupasseet {
+  position: absolute;
+  top: 12px;
+  justify-content: center;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 4px;
+  z-index: 1;
+  width: 220px;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.barspopuptemplate {
+  position: absolute;
+  top: -27px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 240px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.PcrGridQuotedDownload {
+  position: relative;
+  bottom: 54px;
+  width: 8%;
+  margin: 6px;
+}
+.PcrGridwhereUsedDownload {
+  position: relative;
+  bottom: 40px;
+  padding-left: 18px;
+  width: 10%;
+}
+.serviceIconDiv {
+  display: flex;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+}
+.applyclearbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+  position: relative;
+  height: 40px;
+  top: 9px;
+}
+.applyButton {
+  color: #267c98;
+  font-weight: bold;
+  border-color: #267c98;
+  font-size: 10px;
+  height: 24px;
+  width: 60px;
+}
+.clearButton {
+  color: maroon;
+  border-color: red;
+  font-weight: bold;
+  font-size: 10px;
+  height: 24px;
+  width: 60px;
+}
+
+.variable_Filter_1 {
+  list-style: none;
+  position: relative;
+  height: 93px;
+  width: 94%;
+  background: white;
+  left: 4px;
+  bottom: 32px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  outline-color: lightblue;
+  z-index: 1;
+  padding: 5px;
+}
+
+.variable_Filter_2 {
+  list-style: none;
+  position: relative;
+  height: 102px;
+  /* width: 177px; */
+  background: white;
+  /* left: -13px; */
+  top: -31px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  outline-color: #216c98;
+  padding: 5px;
+}
+.clearbuttondiv {
+  display: flex;
+  justify-content: start;
+  height: 35px;
+  padding: 3px;
+  background-color: #d0d4ca;
+}
+
+.clearbutton {
+  background: white;
+  border: 1px solid #ccc;
+  width: 30%;
+  position: relative;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.filter_content {
+  height: 84%;
+  position: relative;
+  background: #f5f5f5;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 2px;
+}
+
+.numerical_filter_content {
+  position: relative;
+  background: #f5f5f5;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 2px;
+}
+.numerical_list_Selection {
+  position: relative;
+  /* top: -36px; */
+  width: 95%;
+  height: 20px;
+  padding: 2px;
+  margin: 4px;
+  outline-color: #216c98;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 11px;
+}
+.numerical_filter_search {
+  position: relative;
+  /* top: -36px; */
+  width: 95%;
+  height: 20px;
+  padding: 2px;
+  margin: 4px;
+  outline-color: #216c98;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.numerical_list_Selection2 {
+  position: relative;
+  /* top: -36px; */
+  width: 98%;
+  height: 20px;
+  padding: 2px;
+  margin: 4px;
+  outline-color: #216c98;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 11px;
+}
+#fa_Caret_Up_grid {
+  color: #216c98;
+  position: absolute;
+  right: 14px;
+  font-size: 11px;
+  padding-top: 8px;
+}
+/* -------------------------- */
+.myTableTrPcr:hover{
+  background: #e6e7e7;
+}
+.boldRow_service.first-row {
+  font-weight: bold;
+  background-color: #f4f1f1;
+}
+
+.boldRow_tasks.first-row {
+  background-color: #e7e5e5;
+  color: #216c98
+}
+
+.boldRow_roles.first-row {
+  background-color: #ebe9e9;
+  color: #216c98;
+}
+
+.boldRow_expenses.first-row {
+  background-color: #ebe9e9;
+  color: #216c98;
+}
+
+.myTableTd.newTasksCell {
+  padding-left: 40px;
+  color: #216c98;
+  font-weight: bold;
+  text-align: left;
+}
+
+.myTableTd.labhourCell {
+  padding-left: 40px;
+  color: #216c98;
+  font-weight: bold;
+  text-align: left;
+}
